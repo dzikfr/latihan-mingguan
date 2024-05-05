@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat form pada web</title>
+</head>
+<style>
+    input {
+    margin: 10px;
+    }
+</style>
+<body>
+    <h1 style="color: blue;text-align: center;">Free Registration</h1>
+    <div>
+        <form action="">
+            <table>
+                <th>
+                    <tr>
+                        <td><label for="nama">Nama</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" id="nama"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tgllahir">Tanggal Masuk</label></td>
+                        <td>:</td>
+                        <td><input type="date" name="tgllahir" id="tgllahir" value="2000-01-01" min="2000-01-01" max="2025-01-01"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="alamat">Alamat</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="alamat" id="alamat"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="kota">Kota</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="Kota" id="kota"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pekerjaan">Pekerjaan</label></td>
+                        <td>:</td>
+                        <td><select name="pekerjaan" id="pekerjaan">
+                            <option value="petani">Petani</option>
+                            <option value="guru">Guru</option>
+                            <option value="driver">Driver</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>:</td>
+                        <td><input type="radio" name="gender" id="laki" value="laki"><label for="laki">Laki-Laki</label><br>
+                            <input type="radio" name="gender" id="perempuan" value="perempuan"><label for="perempuan">Perempuan</label></td>
+                    </tr>
+                    <tr>
+                        <td>Hobby</td>
+                        <td>:</td>
+                        <td><input type="checkbox" name="hobby" id="reading" value="reading">
+                            <label for="reading">Reading</label><br>
+                    
+                            <input type="checkbox" name="hobby" id="sport" value="sport">
+                            <label for="sport">Sport</label><br>
+                    
+                            <input type="checkbox" name="hobby" id="singing" value="singing">
+                            <label for="singing">Singing</label><br>
+                    
+                            <input type="checkbox" name="hobby" id="traveling" value="traveling">
+                            <label for="traveling">Traveling</label><br></td>
+                    </tr>
+                </th>
+            </table>
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Hapus">
+        </form>      
+    </div>
+</body>
+</html>
